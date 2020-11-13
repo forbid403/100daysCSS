@@ -1,0 +1,80 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: orange;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+	top: 49.5%;
+	left: 0;
+	right: 0;
+	margin-top: -22.5px;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+}
+
+.fix {
+	position: absolute;
+	top: 0;
+	right: 56%;
+	height: 45px;
+	text-shadow: 2px 2px 2px #e67e22;
+}
+
+.change {
+	position: absolute;
+	left: 47%;
+	text-align: left;
+	height: 45px;
+	overflow: hidden;
+}
+
+.inner {
+	position: relative;
+  animation: rotate 2.5s ease-in-out infinite;
+}
+
+.element {
+	display: block;
+	font-weight: 700;
+	text-shadow: 2px 2px 2px #e67e22;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(0);
+  }
+	25% {
+		transform: translateY(-45px);
+	}
+	50% {
+		transform: translateY(-90px);
+	}
+	75% {
+		transform: translateY(-135px);
+	}
+	100% {
+		transform: translateY(-180px);
+	}
+}
