@@ -1,0 +1,65 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: pink;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.input, .secret, .backside {
+	width: 150px;
+	height: 40px;
+	padding: 0;
+	text-align: center;
+}
+
+.wrap {
+	width: 100%;
+	height: 100%;
+	transition: all .5s ease-in-out;
+	transform-style: preserve-3d;
+	&.flip {
+		transform: rotateX(180deg);
+	}
+}
+
+.backside {
+	line-height: 40px;
+	backface-visibility: hidden;
+	background-color: #fff;
+	position: absolute;
+	transform: rotateX(180deg);
+}
+
+.input {
+	outline: none;
+	border: none;
+	backface-visibility: hidden;
+	position: absolute;
+}
+
+.secret {
+	display: block;
+	background-color: royalblue;
+	backface-visibility: hidden;
+	line-height: 40px;
+	color: white;
+}
